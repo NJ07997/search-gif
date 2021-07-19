@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
+import _ from 'lodash'
 import GiphyList from './components/GiphyList'
 import SearchBar from './components/SearchBar'
-import _ from 'lodash'
+import './App.css';
 
 class App extends Component {
   constructor() {
@@ -42,14 +42,14 @@ class App extends Component {
           <div className="title">
             <h1>Giphy Search Engine</h1>
           </div>
-          <SearchBar onChange={(searchTerm) => fetchGifs(searchTerm)} />
+            <SearchBar onChange={(searchTerm) => fetchGifs(searchTerm)} />
           <div>
             <GiphyList gifs={this.state.gifs.data}/>
           </div>
         </div>
       );
     }
-  }
-}
+  };
+};
 
 export default App;
