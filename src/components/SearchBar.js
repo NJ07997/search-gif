@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import './styles/SearchBar.css';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -18,15 +19,14 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <div className="header">
+        <div className="searchBar">
           <div>
             <input
               type="text"
-              placeholder="Search all the GIFs..."
+              placeholder="Search for GIFs as you type..."
               value={this.state.searchTerm}
               onChange={(ev) => this.handleSearchBarChange(ev.target.value)}
             />
-            <button type="submit">Search</button>
           </div>
         </div>
       </div>

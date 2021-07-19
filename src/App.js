@@ -4,8 +4,6 @@ import GiphyList from './components/GiphyList'
 import SearchBar from './components/SearchBar'
 import _ from 'lodash'
 
-const API_KEY = "your_api_key_here"
-
 class App extends Component {
   constructor() {
     super()
@@ -40,10 +38,12 @@ class App extends Component {
       return null
     } else {
       return (
-        <div className="ui grid container">
+        <div>
+          <div className="title">
+            <h1>Giphy Search Engine</h1>
+          </div>
           <SearchBar onChange={(searchTerm) => fetchGifs(searchTerm)} />
-
-          <div className="ui grid">
+          <div>
             <GiphyList gifs={this.state.gifs.data}/>
           </div>
         </div>

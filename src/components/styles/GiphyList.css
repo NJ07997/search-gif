@@ -1,0 +1,28 @@
+.fav_button_div {
+  justify-content: center;
+  display: flex;
+}
+  
+.fav_button {
+  padding:10px 10px; 
+  background:#00acee;
+  color:#f5f5f5;
+  font-weight:600;
+  font-family: Georgia, sans-serif;
+  font-size: medium;
+}
+
+.result {
+  padding:20px;
+}
+  
+.result .list {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+  
+.result .list {
+  width:100%;
+}
+  
