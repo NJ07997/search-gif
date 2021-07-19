@@ -2,12 +2,23 @@
 
 A Basic search engine to search GIFs from GIPHY api. You can select multiple GIFs and save them as favorites, which can be viewed in Favorites page.
 
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm install`
+
+Run this command to install the dependencies for the project.
+
+### `npm start`
+
+Run this command to start the app. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
 ## Folder Structure
 
 ```
 search-gif/
   README.md
-  node_modules/
   package.json
   public/
     index.html
@@ -36,15 +47,3 @@ search-gif/
     reducer.js
     types.js
 ```
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm install`
-
-Run this command to install the dependencies for the project.
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
