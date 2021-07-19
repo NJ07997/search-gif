@@ -4,7 +4,8 @@ import rootReducer from '../rootReducer';
 const persistedState = {};
 
 export default function configureStore() {
- return createStore (
-   rootReducer,
-   persistedState);
+  return createStore (
+    rootReducer,
+    persistedState
+  );
 };
